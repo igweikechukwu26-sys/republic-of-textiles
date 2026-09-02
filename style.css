@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+}
+
+/* Navigation */
+
+header {
+    background: #111;
+    color: white;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+    url("https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #d4af37;
+    color: #111;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Sections */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.section h2,
+.about h2,
+.support h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.section-intro {
+    margin-bottom: 40px;
+}
+
+/* Fabric Cards */
+
+.fabric-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.fabric-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: white;
+}
+
+.fabric-card h3 {
+    margin: 15px 0 8px;
+}
+
+.fabric-card p {
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.fabric-card strong {
+    color: #8a6d00;
+}
+
+/* Fabric Image Areas */
+
+.fabric-image {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.ankara {
+    background: repeating-linear-gradient(
+        45deg,
+        #c0392b,
+        #c0392b 20px,
+        #f1c40f 20px,
+        #f1c40f 40px
+    );
+}
+
+.lace {
+    background: radial-gradient(
+        circle,
+        #ddd 10%,
+        #777 11%,
+        #777 20%,
+        #eee 21%
+    );
+}
+
+.senator {
+    background: linear-gradient(
+        135deg,
+        #333,
+        #777,
+        #222
+    );
+}
+
+.satin {
+    background: linear-gradient(
+        120deg,
+        #777,
+        #eee,
+        #555
+    );
+}
+
+/* About */
+
+.about {
+    background: #f5f5f5;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.about div {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Support */
+
+.support {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.support p {
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+.support button {
+    background: #111;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Contact */
+
+.contact {
+    background: #fafafa;
+}
+
+/* Footer */
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .fabric-container {
+        grid-template-columns: 1fr;
+    }
+
+}
