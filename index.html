@@ -146,7 +146,14 @@
 
     <script src="script.js"></script>
 
-<script
-src='//fw-cdn.com/17272801/7542802.js'
-chat='true'>
+<script>
+function initFreshdesk() {
+  window.fdWidget.init({
+    token: "01M1NPQ1B86YNXC7Q9V67B2FD2",
+    host: "https://zohomail1977.freshdesk.com",
+    widgetId: "01M1NPQ47ZDC0CCHBCQ6N3XW4N"
+  });
+}
+
+function initialize(i,t){var e;i.getElementById(t)?initFreshdesk():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://zohomail1977.freshdesk.com/webchat/js/widget.js",e.onload=initFreshdesk,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshdesk-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
 </script></body></html>
